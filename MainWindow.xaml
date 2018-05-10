@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="主窗口" Height="350" Width="525">
     <Grid>
-        <StackPanel Margin="185,-47,-185,47" >
-            <Button Name="btn2" Content="显示InputWindow窗体" Margin="150" Click="btn2_Click"></Button>
-            
+        <StackPanel >
+            <Button Name="btn2" Content="显示InputWindow窗体" Margin="50" Click="btn2_Click"></Button>
+            <Button x:Name="btn3" Content="按钮" Margin="150" Click="btn3_Click"></Button>
         </StackPanel>
     </Grid>
 </Window>
