@@ -1,0 +1,24 @@
+﻿<Window x:Class="input_wpf.input"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:input_wpf"
+        mc:Ignorable="d"
+        Title="输入窗口" Height="250" Width="450" ResizeMode="NoResize">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="tb1" Grid.ColumnSpan="2"></TextBox>
+            <Button Name="btnOK" Margin="20" Content="OK" Grid.Row="1" Click="btnOK_Click"></Button>
+            <Button Name="btnCancel" Margin="20" Content="Cancel" Grid.Row="1" Grid.Column="1" Click="btnCancel_Click"></Button>
+        </Grid>
+    </Grid>
+</Window>
